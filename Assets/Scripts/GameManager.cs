@@ -20,9 +20,7 @@ public class GameManager : MonoBehaviour
     
     private static int savedPoints = 0;         // Для перехода сохранение набранных очков
     private static int savedHP = 0;             // Для перехода сохранения жизней
-
-    
-    
+        
     
     void Awake()
     {
