@@ -142,8 +142,12 @@ public class GameManager : MonoBehaviour
 
     public void RestartGameMidle()
     {
+        HP = 3;
+        points = 0;
+
         UpdateUI();
         gameOverPanel.SetActive(false);
+        levelCompletePanel.SetActive(false);
 
         // Вернуть изначальную сцену
         UIManager uiManager = FindObjectOfType<UIManager>();
@@ -175,6 +179,7 @@ public class GameManager : MonoBehaviour
     void LevelComplete()
     {
         levelCompletePanel.SetActive(true); // Показываем панель завершения уровня
+        
         Debug.Log("Level Complete. Level Complete Panel activated.");
     }
 
